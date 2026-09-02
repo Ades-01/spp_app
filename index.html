@@ -98,7 +98,7 @@
        仅在首次执行导出/导入时下载，显著减小首屏加载体积。见 js/util.js 与 js/report-engine.js。 -->
   <!-- 离线世界地图底图改为「打开看板时懒加载」，见 js/supplymap.js 的 ensureLibs -->
 
-  <script defer src="register-sw.js"></script>
+  <script defer src="register('/spp_app/sw.js')"></script>
   <script defer src="app.bundle.js"></script>
 </body>
 </html>
