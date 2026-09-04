@@ -1,0 +1,76 @@
+{
+  "name": "供应商预审平台 · Supplier Pre-Assessment Platform",
+  "short_name": "供应商预审",
+  "description": "专业问卷填写与供应链审核工具，支持完全离线使用、断点续填与局域网数据同步",
+  "id": "/SPP/",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "background_color": "#1A5F9E",
+  "theme_color": "#1A5F9E",
+  "orientation": "any",
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "categories": ["business", "productivity", "utilities"],
+  "icons": [
+    { "src": "src/icons/icon-48x48.png",   "sizes": "48x48",   "type": "image/png", "purpose": "any" },
+    { "src": "src/icons/icon-72x72.png",   "sizes": "72x72",   "type": "image/png", "purpose": "any" },
+    { "src": "src/icons/icon-96x96.png",   "sizes": "96x96",   "type": "image/png", "purpose": "any" },
+    { "src": "src/icons/icon-144x144.png", "sizes": "144x144", "type": "image/png", "purpose": "any" },
+    { "src": "src/icons/icon-152x152.png", "sizes": "152x152", "type": "image/png", "purpose": "any" },
+    { "src": "src/icons/icon-167x167.png", "sizes": "167x167", "type": "image/png", "purpose": "any" },
+    { "src": "src/icons/icon-180x180.png", "sizes": "180x180", "type": "image/png", "purpose": "any" },
+    { "src": "src/icons/icon-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "src/icons/icon-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "screenshots": [
+    { "src": "src/screenshots/dashboard-mobile.png", "sizes": "1280x800",  "type": "image/png", "form_factor": "wide",  "label": "中文仪表盘" },
+    { "src": "src/screenshots/supply-chain.png",   "sizes": "1280x800",  "type": "image/png", "form_factor": "wide",  "label": "供应链地图看板" },
+    { "src": "src/screenshots/dashboard-en.png",   "sizes": "1280x800",  "type": "image/png", "form_factor": "wide",  "label": "English Dashboard" },
+    { "src": "src/screenshots/esg-en.png",         "sizes": "1280x800",  "type": "image/png", "form_factor": "wide",  "label": "ESG Module (English)" }
+  ],
+  "shortcuts": [
+    {
+      "name": "评估填写",
+      "short_name": "评估",
+      "description": "直接进入审核评估填写",
+      "url": "./index.html#assessments",
+      "icons": [{ "src": "src/icons/icon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "供应商登记",
+      "short_name": "供应商",
+      "description": "直接进入供应商登记",
+      "url": "./index.html#facilities",
+      "icons": [{ "src": "src/icons/icon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "问卷设计",
+      "short_name": "问卷",
+      "description": "直接进入自定义问卷设计",
+      "url": "./index.html#designer",
+      "icons": [{ "src": "src/icons/icon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "报告导出",
+      "short_name": "报告",
+      "description": "导出评估报告",
+      "url": "./index.html#report",
+      "icons": [{ "src": "src/icons/icon-192x192.png", "sizes": "192x192" }]
+    }
+  ],
+  "prefer_related_applications": false,
+  "handle_links": "preferred",
+  "launch_handler": {
+    "client_mode": ["auto"],
+    "navigation_urls": ["https://ades-01.github.io/spp_app/*"]
+  },
+  "protocol_handlers": [],
+  "file_handlers": [],
+  "share_target": null,
+  "widgets": [],
+  "note_taking": null,
+  "iarc_rating_id": "",
+  "scope_extensions": []
+}
